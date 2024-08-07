@@ -16,7 +16,7 @@ function TaskCard({ task, deleteTask, updateTask }: Props) {
         attributes,
         listeners,
         transform,
-        transition, isDragging } = useSortable({
+        transition } = useSortable({
             id: task.id,
             data: {
                 type: "Task",
